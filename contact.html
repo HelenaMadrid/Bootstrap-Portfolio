@@ -8,11 +8,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<body class="h-100 flex-column d-flex">
+<body class="h-100 flex-column d-flex bg-secondary">
   <main role="main" class="flex-shrink-0">
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <a class="navbar-brand" href="index.html">Helena Madrid</a>
-    <ul class="navbar-nav mr-right">
+    <ul class="navbar-nav">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="navbar-toggler-icon"></span>
@@ -26,23 +26,30 @@
       </li>
     </ul>
   </nav>
-  <div class="container-fluid">
+
+  <div class="container bg-light my-4 py-4 rounded">
     <div class="row">
       <div class="col-12">  
         <h1 class="text-center">Contact</h1>
       </div>
     </div>
 
-    <div  class="form-row">
-      <div class="col-sm-auto">
-        <form class="border border-success" action="#">
-          <label>Name</label><br>
-          <input type="text" class="col" placeholder="Helena Madrid" required><br>
-          <label>Email</label><br>
-          <input type="email" class="col" placeholder="helena.madrid@directrips.com" required><br>
-          <label>Message</label><br>
-          <textarea class="col" placeholder="Write your message here" rows="5" required></textarea>
+    <div  class="form-row my-4 px-4">
+      <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1">
+
+      </div>
+      <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10">
+        <form action="#">
+          <label class="my-3">Name</label><br>
+          <input type="text" class="col py-1" placeholder="Helena Madrid" required><br>
+          <label class="my-3">Email</label><br>
+          <input type="email" class="col py-1" placeholder="helena.madrid@directrips.com" required><br>
+          <label class="my-3">Message</label><br>
+          <textarea class="col py-1" placeholder="Write your message here" rows="5" required></textarea>
           <button type="submit" class="btn btn-info">Submit</button>
+          <div class="col-sm-0 col-md-1 col-lg-1 col-xl-1">
+        
+          </div>
         </form>
       </div>
     </div>
